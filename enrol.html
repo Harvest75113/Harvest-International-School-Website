@@ -1,1 +1,35 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Enrol Your Child | Harvest International School</title><link rel="stylesheet" href="assets/site.css"></head><body><header><div class="nav"><a class="brand" href="index.html">Harvest International School</a><nav class="links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav></div></header><section class="section"><h2>Enrol your child here.</h2><p class="lead">Please fill in this form to enrol your child with Harvest Academy.</p><form onsubmit="event.preventDefault();alert('Submission backend will be connected before production cutover.')"><p><label>Student's Name in Full (required)<br><input required name="student_name"></label></p><p><label>Date of Birth (required)<br><input required type="date" name="dob"></label></p><p><label>Current School (required)<br><input required name="current_school"></label></p><p><label>Class/Grade/Year (required)<br><input required name="grade"></label></p><p><label>Father's Name (required)<br><input required name="father_name"></label></p><p><label>Mother's Name (required)<br><input required name="mother_name"></label></p><p><label>Phone Contact (required)<br><input required type="tel" name="phone"></label></p><p><label>Your Email<br><input type="email" name="email"></label></p><button class="button" type="submit">ENROL YOUR CHILD</button></form></section><footer><p>Harvest International School</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enrol Your Child | Harvest International School</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="index.html"><img src="https://irp-cdn.multiscreensite.com/749f3d59/dms3rep/multi/HIS_New+Logo.svg" alt="Harvest International School"></a>
+  <button class="mobile-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+  <nav class="links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="gallery.html">Gallery</a><a href="jobs.html">Jobs</a><a href="contact.html">Contact</a><a class="apply" href="https://his.nascorptechnologies.com/gw/gls/onlineAppForms?code=HOnrugANfvABzXkhis">APPLY NOW</a></nav>
+</div></header>
+<section class="page-hero compact-hero" style="background-image:linear-gradient(rgba(17,59,49,.62),rgba(17,59,49,.62)),url('https://irp.cdn-website.com/749f3d59/dms3rep/multi/DSC_5231-99845b7a.jpg')">
+  <div><p class="eyebrow">Admissions</p><h1>Enrol Your Child</h1><p>Begin your child's journey with Harvest International School.</p></div>
+</section>
+<section class="section form-section">
+  <div class="section-intro"><h2>Enrol your child here.</h2><p class="lead">Please fill in the details below. Online submission through this reconstructed form is not enabled yet; use the official Apply Now link to submit an application.</p></div>
+  <form class="harvest-form" onsubmit="event.preventDefault();document.getElementById('form-note').hidden=false">
+    <div class="form-grid">
+      <label>Student's Name in Full <span>*</span><input required name="student_name" autocomplete="name"></label>
+      <label>Date of Birth <span>*</span><input required type="date" name="dob"></label>
+      <label>Current School <span>*</span><input required name="current_school"></label>
+      <label>Class/Grade/Year <span>*</span><input required name="grade"></label>
+      <label>Father's Name <span>*</span><input required name="father_name"></label>
+      <label>Mother's Name <span>*</span><input required name="mother_name"></label>
+      <label>Phone Contact <span>*</span><input required type="tel" name="phone" autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" autocomplete="email"></label>
+    </div>
+    <div class="form-actions"><button class="button" type="submit">ENROL YOUR CHILD</button><a class="button button-outline" href="https://his.nascorptechnologies.com/gw/gls/onlineAppForms?code=HOnrugANfvABzXkhis">OFFICIAL ONLINE APPLICATION</a></div>
+    <p id="form-note" class="form-note" hidden>Thank you for enrolling your child with us. To complete the submission online, please use the Official Online Application button.</p>
+  </form>
+</section>
+<footer><p>Harvest International School</p></footer>
+</body></html>
